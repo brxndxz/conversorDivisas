@@ -1,0 +1,106 @@
+:root {
+    --primary-color: rgb(71, 70, 70);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+.contenedor {
+    background-image: url(./img/gris.avif);
+    opacity: 0.9;
+    border-radius: 10px;
+}
+.centrar-contenido{
+    padding: 10px 10px;
+}
+h1{
+    color: #fff;
+    opacity: 1;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    opacity: 1;
+    color: #dedede;
+}
+
+.btn{
+    color: white;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.conversor-imagen{
+    width: 150px;
+}
+
+.moneda{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moneda select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.moneda input {
+    border: 0;
+    font-size: 30px;
+    text-align: right;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.tasa-cambio-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 20%;
+    opacity: 1;
+}
+
+.cambio{
+    color: #dedede;
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+    opacity: 1;
+}
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+@media (max-width:600px) {
+    .moneda input{
+        width: 200px;
+    }
+    
+}
